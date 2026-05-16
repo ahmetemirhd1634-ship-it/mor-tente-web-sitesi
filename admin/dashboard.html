@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Mor Tente Admin</title>
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="admin-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1>🎪 Admin</h1>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#" class="nav-link active" data-section="dashboard">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </a>
+                <a href="#" class="nav-link" data-section="settings">
+                    <i class="fas fa-cog"></i>
+                    <span>Ayarlar</span>
+                </a>
+                <a href="#" class="nav-link" id="logoutBtn">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span>Çıkış</span>
+                </a>
+            </nav>
+        </aside>
+
+        <main class="main-admin">
+            <section id="dashboard" class="section active">
+                <div class="section-header">
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-eye"></i>
+                        <div>
+                            <h3>1,234</h3>
+                            <p>Ziyaretçiler</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>42</h3>
+                            <p>Yeni Mesaj</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <h3>98%</h3>
+                            <p>Memnuniyet</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="settings" class="section">
+                <div class="section-header">
+                    <h2>Ayarlar</h2>
+                </div>
+                <form class="settings-form">
+                    <div class="form-group">
+                        <label>Ana Renk</label>
+                        <input type="color" value="#7c3aed" id="primaryColor" onchange="changeThemeColor()">
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon</label>
+                        <input type="tel" value="0555 123 4567" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" value="info@mortente.com" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label>Adres</label>
+                        <input type="text" value="İstanbul, Türkiye" id="address">
+                    </div>
+                    <div class="form-group">
+                        <label>Instagram Hesabı</label>
+                        <input type="text" value="@mortente" id="instagram">
+                    </div>
+                    <button type="button" class="btn-primary" onclick="saveSettings()">Kaydet</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="../assets/js/admin.js"></script>
+</body>
+</html>

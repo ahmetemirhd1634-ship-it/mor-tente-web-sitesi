@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mor Tente - Profesyonel Tente Hizmetleri</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">🎪 Mor Tente</h1>
+                <a href="admin/index.html" class="admin-btn">⚙️ Admin</a>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section id="home" class="page active">
+                <div class="hero">
+                    <div class="hero-overlay">
+                        <h2>Mor Tente</h2>
+                        <p>Profesyonel Tente Hizmetleri</p>
+                        <button class="btn-primary" onclick="navigateTo('contact')">İletişime Geç</button>
+                    </div>
+                </div>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-umbrella"></i>
+                        <h3>Kaliteli Ürünler</h3>
+                        <p>En iyi kalitede tente ürünleri</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Hızlı Kurulum</h3>
+                        <p>24 saat içinde kurulum hizmeti</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>7/24 Destek</h3>
+                        <p>Her zaman yanınızda</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="page">
+                <div class="page-content">
+                    <h2>Hakkımızda</h2>
+                    <p>Mor Tente, 15 yıldan beri profesyonel tente hizmetleri sunmaktadır. Müşteri memnuniyeti bizim ilk önceliğimiz.</p>
+                    <h3>Neden Biz?</h3>
+                    <ul>
+                        <li>✅ 15 yıllık deneyim</li>
+                        <li>✅ Kaliteli malzeme</li>
+                        <li>✅ Uygun fiyat</li>
+                        <li>✅ Hızlı hizmet</li>
+                        <li>✅ Profesyonel ekip</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="gallery" class="page">
+                <div class="page-content">
+                    <h2>Galeri</h2>
+                    <div class="gallery-grid" id="galleryGrid">
+                        <div class="gallery-item"><div class="placeholder">📷 Resim 1</div></div>
+                        <div class="gallery-item"><div class="placeholder">📷 Resim 2</div></div>
+                        <div class="gallery-item"><div class="placeholder">📷 Resim 3</div></div>
+                        <div class="gallery-item"><div class="placeholder">📷 Resim 4</div></div>
+                        <div class="gallery-item"><div class="placeholder">📷 Resim 5</div></div>
+                        <div class="gallery-item"><div class="placeholder">📷 Resim 6</div></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="page">
+                <div class="page-content">
+                    <h2>İletişim</h2>
+                    <form class="contact-form" id="contactForm">
+                        <input type="text" placeholder="Adınız" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="tel" placeholder="Telefon" required>
+                        <textarea placeholder="Mesajınız" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary">Gönder</button>
+                    </form>
+                    <div class="contact-info">
+                        <h3>Bize Ulaşın</h3>
+                        <p><i class="fas fa-phone"></i> 0555 123 4567</p>
+                        <p><i class="fas fa-envelope"></i> info@mortente.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> İstanbul, Türkiye</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="instagram" class="page">
+                <div class="page-content">
+                    <h2>Instagram</h2>
+                    <p style="text-align: center;">Bizi Instagram'da takip edin</p>
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <a href="https://instagram.com/mortente" target="_blank" class="btn-primary">
+                            <i class="fab fa-instagram"></i> @mortente
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <a href="#" class="nav-item active" data-page="home">
+                <i class="fas fa-home"></i>
+                <span>Ana Sayfa</span>
+            </a>
+            <a href="#" class="nav-item" data-page="about">
+                <i class="fas fa-info-circle"></i>
+                <span>Hakkımda</span>
+            </a>
+            <a href="#" class="nav-item" data-page="gallery">
+                <i class="fas fa-images"></i>
+                <span>Galeri</span>
+            </a>
+            <a href="#" class="nav-item" data-page="contact">
+                <i class="fas fa-envelope"></i>
+                <span>İletişim</span>
+            </a>
+            <a href="#" class="nav-item" data-page="instagram">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </nav>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
